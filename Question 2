@@ -1,0 +1,40 @@
+using System;
+
+namespace ConsoleApp15
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            int j = 2;
+            int sum = 0;
+
+            while (i < 4000000)
+            {
+                if (i < j)
+                {
+                    i += j;
+
+                    if (i % 2 == 0)
+                    {
+                        sum += i;
+                    }
+
+                }
+
+                else
+                {
+                    j += i;
+
+                    if (j % 2 == 0)
+                    {
+                        sum += j;
+                    }
+                }
+            }
+
+            Console.WriteLine("The answer is " + sum);
+        }
+    }
+}
