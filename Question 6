@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+
+namespace Lab
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+
+        {
+            Console.WriteLine((SumOfN(100) * SumOfN(100)) - SumOfSquareOf(100));
+
+            Console.ReadLine();
+        }
+
+        static long SumOfSquareOf(int n)
+
+        {
+
+            return ((n * (n + 1) * (2 * n + 1) / 6));
+
+        }
+
+        static long SumOfN(int n)
+
+        {
+            return n * (n + 1) / 2;
+
+        }
+    }
+
+}   
